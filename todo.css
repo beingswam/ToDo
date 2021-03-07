@@ -1,0 +1,142 @@
+body 
+ {
+  background: #2F7336;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #AA3A38, #2F7336);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #AA3A38, #2F7336); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+  }
+  
+  /* Include the padding and border in an element's total width and height */
+  * 
+  {
+    box-sizing: border-box;
+  }
+
+  img{
+    height: 100px;
+    width: 370px;
+    transform: translate(-484px, 14px);
+  }
+  
+  /* Remove margins and padding from the list */
+  ul 
+  {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style the list items */
+  ul li 
+  { 
+    margin: 3px;
+    border: 1.5px solid black;
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    list-style-type: none;
+    background: #eee;
+    font-size: 25px;
+    letter-spacing: 1px;
+    transition: 0.2s;
+    transform: translate(206px, 10px);
+    width: 930px;
+    
+  }
+  
+  /* Darker background-color on hover */
+  ul li:hover 
+  {
+    background: #ddd;
+  }
+  
+  /* When clicked on, add a background color and strike out text */
+  ul li.checked {
+    background: #888;
+    color: #fff;
+    text-decoration: line-through;
+  }
+  
+  /* Add a "checked" mark when clicked on */
+  ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color:springgreen;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 13px;
+    left: 15px;
+    transform: rotate(50deg);
+    height: 21px;
+    width: 7px;
+  }
+  
+  /* Style the close button */
+  .close {
+    position: absolute;
+    right: 2.5px;
+    top: 2px;
+    padding: 7px;
+    background-color: #eee;
+   
+  }
+  
+  /* Style the header */
+  .header {
+    color: white;
+    text-align: center;
+    margin: 10px;
+    height: 200px;
+  }
+  
+  /* Clear floats after the header */
+  .header:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Style the input */
+  input {
+    text-align: center;
+    width: 60%;
+    padding: 13px;
+    padding: 13px;
+    padding-left: 111px;
+    letter-spacing: 5px;
+    float: left;
+    font-size: 16px;
+    outline: none;
+    border: 1.5px solid black;
+    transform: translate(200px, 130px);
+  }
+  
+  /* Style the "Add" button */
+  .addBtn {
+    padding: 13px;
+    width: 10%;
+    background: #d9d9d9;
+    color: #555;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 0;
+    border: 1.5px solid black;
+    border-left-style: unset;
+    transform: translate(200px, 130px);
+    
+  }
+  
+  .addBtn:hover {
+    background-color: #bbb;
+  }
+  h2{
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
+    letter-spacing: 3px;
+    color: white;
+  }
